@@ -1,0 +1,150 @@
+body{
+    background-color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: auto;
+}
+
+/* Animación del Logo de la Empresa*/
+
+@keyframes apareceLogo {
+  from {filter:blur(10px);}
+  to {filter:blur(0px);}
+}
+
+header{
+    margin: 3%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter:blur(0px);
+    animation-name: apareceLogo;
+    animation-duration: 3s;
+}
+
+nav {
+    
+    background-color: rgb(228, 15, 15);
+    border-radius: 15px 15px 15px 0px;
+    padding: 1vh;
+}
+
+.menú {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+main {
+    margin: auto;
+}
+
+
+/*Animación de burbuja de texto*/
+
+@keyframes presentación {
+  from { transform:rotatey(180deg); filter:opacity(0%)}
+  to {filter:opacity(100%)}
+}
+
+article { 
+    margin: 4% 15%;
+    padding: 3%;
+    border-radius: 25px 1px 25px 1px;
+    box-shadow: 5px 5px 10px ;
+    color: dimgrey;
+    font-size: x-large ;
+    text-align: center;
+    size: 20vh;
+    background-color: whitesmoke; 
+    animation-name: presentación;
+    animation-duration: 4s;
+}
+
+#Proveedores {
+    margin: 10%;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+footer {
+    background-color: rgb(228, 15, 15);
+    border-radius: 0px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Lucida Sans','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+ 
+#alumna {
+  text-align: center;
+
+}
+
+#mapa {
+  margin: 4% 15%;
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  color: rgb(228, 15, 15);
+}
+  
+.contacto, footer, nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  text-align: center;
+  padding: 10px;
+}
+
+.googlemaps, .formulario, .menú, #dirección, #alumna {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 10px;
+
+}
+
+@media all and (min-width: 600px){
+  .googlemaps, .formulario, .menú, #dirección, #alumna { flex: 1 1 auto};
+
+}
+
+@media all and (min-width: 800px) {
+  .googlemaps, .formulario, .menú, #dirección, #alumna { flex: 2};
+}
+
+
+/*Links*/
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+  a:link {
+    color: white;
+    font-weight: bold;
+  }
+
+  a:hover {
+    font-size: large;
+  }
+
+  a:active {
+    font-style: italic;
+  }
+  
+  a:visited {
+    color: whitesmoke;
+    font-weight: normal;
+  }
+

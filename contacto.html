@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Distribuidora Sierra - Pigue</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8006924c37.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Logo de la Distribuidora--> 
+    
+    <header>
+        <img src="Imagenes\Logo distribuidora Sierra Rojo.jpg" alt="Distribuidora Sierra">
+    </header>
+    
+    <!--Barra de navegacion-->
+    <nav>
+        <ul class="menú">
+            <li><a href= "index.html"> Proveedores</a></li>
+            <li><a href= "cobertura.html"> Zona de Cobertura</a></li>
+            <li><a href= "contacto.html"> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contacto">
+        
+            <div class="googlemaps">
+                <h4>Ubicación</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12644.329927324492!2d-62.40394758315241!3d-37.60021776216092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eb95b45fac9b9f%3A0xe3f5cb1a94e65d51!2sAv.%20Primera%20Conscripcion%20Argentina%2C%20Pigue%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653865329941!5m2!1ses!2sar" 
+                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <br>
+            </div>
+
+            <div class="formulario">
+                <h4>Formulario de Contacto</h4>
+                <br>
+                <form action="">
+                    <div>
+                        <label for="nombre">Nombre y Apellido </label>
+                        <br>
+                        <input type="text" id ="nombre">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico </label>
+                        <br>
+                        <input type="email" id ="email">
+                    </div>
+                    <div>
+                        <label for="teléfono">Teléfono </label>
+                        <br>
+                        <input type="teléfono" id ="teléfono">
+                    </div>
+                    <div>
+                        <label for="empresa">Empresa </label>
+                        <br>
+                        <input type="empresa" id ="empresa">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <br>
+                        <textarea type="mensaje" id ="mensaje" rows="3" column="35"></textarea>
+                    </div>
+                    <input type="submit" onclick="enviarFormulario ()" value= "Enviar">
+                </form>
+            </div>
+          
+    </main>
+    <footer>
+        <div id="dirección"> 
+            <h3> Distribuidora Sierra </h3>
+            <i class="fa-brands fa-facebook fa-2x fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i> 
+            <a href="https://es-la.facebook.com/distrisierra/" target="_blank">  facebook.com/distrisierra </a>
+            <p> <i class="fa-solid fa-map-location-dot fa-lg "></i> Av. 1ª Conscripción Argentina 160 <br> 8170 Pigüé <br> Provincia de Buenos Aires <br> Argentina</p>
+        </div> 
+        <div id="alumna">
+            <p>Desarrollado por: </p>
+            <i class="fa-solid fa-laptop-code fa-3x fa-flip" style="--fa-animation-duration: 3s;"></i>
+            <p><strong>Daiana Taylor</strong><br> para curso "Full Stack - Python" <br>de Codo a Codo 2022 <br> comisión 22082 - Prof. Paola Romero</p>
+       </div>      
+    </footer>
+    <script src="formulario.js"></script>
+</body>
+</html>
